@@ -26,4 +26,4 @@ def write():
     #return render_template("write.html",toukou=toukou)
     return redirect("/")
 
-app.run(debug=True)
+app.run()
