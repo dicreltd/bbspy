@@ -10,6 +10,10 @@ def index():
     db.close()
     return render_template("bbs.html",toukous=toukous)
 
+@app.route('/hello')
+def hello():
+    return render_template("hello.html")
+
 @app.route('/',methods=['POST'])
 def write():
     name = request.form['name']
