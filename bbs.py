@@ -25,5 +25,5 @@ def write():
     db.close()
     #return render_template("write.html",toukou=toukou)
     return redirect("/")
-
-app.run()
+if __name__ == "__main__":
+    app.run()
